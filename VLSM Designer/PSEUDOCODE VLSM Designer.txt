@@ -1,0 +1,245 @@
+ 
+
+#The below function will show how to calculate for multiple subnets in order, one after another.
+
+defining subnet designer(inputanIP):
+    
+     
+    print"\n\nThese are your Summary Address details"
+
+    $with IPaddress module run following functions$
+
+    ip = $ipaddress.IPv4Network(inputanIP)    
+
+    vone ="The Network ID is" $ip.networkaddress and subnetmask
+    vtwo = "The First IP assignable for an host is" $ip.networkaddress + 1
+    vthree = "The Last IP assignable for an host is" $ip.broadcastaddress - 1
+    vfour = "The Broadcast address is" $ip.broadcastaddress 
+    vseven = $network address 
+    vsix = "The number of assignable IP is "$ip.number of addresses - 2
+    print (vone)
+    print (vtwo)
+    print (vthree)
+    print (vfour)
+    print (vsix)
+
+    newnetwork = (vseven) + 1
+
+    x = user input to question "Please input required number of hosts for your First subnet - "
+    ab = range between 1 4
+    bb = range between 1 - 8
+    cb = range between 1 - 16
+    db = range between 1 - 32
+    eb = range between 1 - 64
+    fb = range between 1 - 128
+    gb = range between 1 - 256
+    hb = range between 1 - 512
+    ib = range between 1 - 1024
+    jb = range between 1 - 2048
+    kb = range between 1 - 4086
+    lb = range between 1 - 8162
+    #and so on until /0
+    if x in ab:
+        bb = "/30"
+    else if x in bb:
+        bb = "/29"
+    else if x in cb:
+        bb = "/28"
+    else if x in db:
+        bb = "/27"
+    else if x in eb:
+        bb = "/26"
+    else if x in fb:
+        bb = "/25"
+    else if x in gb:
+        bb = "/24"
+    else if x in hb:
+        bb = "/23"
+    else if x in ib:
+        bb = "/22"
+    else if x in jb:
+        bb = "/21"
+    else if x in kb:
+        bb = "/20"
+    else if x in lb:
+        bb = "/19"
+    #and so on until /0
+    else:
+        print "I can't calculate bigger than /19 aka  8160 addresses. This is a design limitation."
+
+
+    theAdress = newnetwork + bb
+    
+    print "Details for First subnet" theAdress
+
+    print "The Network ID is " $ip.networkaddress and subnetmask
+    print ("The First IP assignable for an host is " $ip.networkaddress + 1
+    print ("The Last IP assignable for an host is " $ip.broadcastaddress - 1
+    print ("The Broadcast address is "  $ip.broadcastaddress 
+    print("The number of assignable IP is "$ip.number of addresses - 2
+******    
+    NewValue = ip.broadcast_address 
+
+    theAddress2 = NewValue + 2
+
+
+   print "Your Second subnet network will begin with an IP of " + (theAddress2)
+
+     x = user input to question "Please input required number of hosts for your First subnet - "
+    ab = range between 1 4
+    bb = range between 1 - 8
+    cb = range between 1 - 16
+    db = range between 1 - 32
+    eb = range between 1 - 64
+    fb = range between 1 - 128
+    gb = range between 1 - 256
+    hb = range between 1 - 512
+    ib = range between 1 - 1024
+    jb = range between 1 - 2048
+    kb = range between 1 - 4086
+    lb = range between 1 - 8162
+    #and so on until /0
+    if x in ab:
+        bbb = "/30"
+    else if x in bb:
+        bbb = "/29"
+    else if x in cb:
+        bbb = "/28"
+    else if x in db:
+        bbb = "/27"
+    else if x in eb:
+        bbb = "/26"
+    else if x in fb:
+        bbb = "/25"
+    else if x in gb:
+        bbb = "/24"
+    else if x in hb:
+        bbb = "/23"
+    else if x in ib:
+        bbb = "/22"
+    else if x in jb:
+        bbb = "/21"
+    else if x in kb:
+        bbb = "/20"
+    else if x in lb:
+        bbb = "/19"
+    #and so on until /0
+    else:
+        print "I can't calculate bigger than /19 aka  8160 addresses. This is a design limitation."
+
+
+    ThenewNetwork = theAddress2 + str(bbb)
+    
+
+    print "Details for Second subnet"
+
+    print "The Network ID is " $ip.networkaddress and subnetmask
+    print ("The First IP assignable for an host is " $ip.networkaddress + 1
+    print ("The Last IP assignable for an host is " $ip.broadcastaddress - 1
+    print ("The Broadcast address is "  $ip.broadcastaddress 
+    print("The number of assignable IP is "$ip.number of addresses - 2
+******
+Between the asterisks ***modify numerical values and references accordingly*** REPEAT THIS CODING LOGIC for each subnet required - I did it 6 times
+
+    NewNewValue = ip.broadcast_address 
+
+    theAddress3 = NewValue + 2
+
+#ETC_et cetera_ETC_et al
+#ETC_et al_ETC_et cetera
+
+--------------------------------_______________________________--------------------------------_______________________________
+________________________________-------------------------------________________________________-------------------------------
+
+Defining main menu function
+
+
+    x = user input to question "Please input required number of hosts for your SUMMARY ADDRESS subnet - "
+    ab = range between 1 - 4
+    bb = range between 1 - 8
+    cb = range between 1 - 16
+    db = range between 1 - 32
+    eb = range between 1 - 64
+    fb = range between 1 - 128
+    gb = range between 1 - 256
+    hb = range between 1 - 512
+    ib = range between 1 - 1024
+    jb = range between 1 - 2048
+    kb = range between 1 - 4086
+    lb = range between 1 - 8162
+    #and so on until /0
+    if x in ab:
+        bb = "/30"
+    else if x in bb:
+        bb = "/29"
+    else if x in cb:
+        bb = "/28"
+    else if x in db:
+        bb = "/27"
+    else if x in eb:
+        bb = "/26"
+    else if x in fb:
+        bb = "/25"
+    else if x in gb:
+        bb = "/24"
+    else if x in hb:
+        bb = "/23"
+    else if x in ib:
+        bb = "/22"
+    else if x in jb:
+        bb = "/21"
+    else if x in kb:
+        bb = "/20"
+    else if x in lb:
+        bb = "/19"
+    #and so on until /0
+    else:
+        print "Something something something ur input is invalid dude."
+
+
+    ip = ask user for input("What is the network address you wish to use?)
+
+    x = (ip + bb)
+
+    maxIs6 = ask user for input("How many subnets would you like to calculate/design? (Max is 6) - ")
+    while True:
+        if maxIs6 == "6":
+            subnet designer function for 6(x)
+            run repeats function
+        else if maxIs6 == "5":
+            subnet designer function for 5(x)
+            run repeats function
+        else if maxIs6 == "4":
+            subnet designer function for 4(x)
+            repeats
+        else if maxIs6 == "3":
+            subnet designer function for 3(x)
+            run repeats function
+        else if maxIs6 == "2":
+            subnet designer function for 2(x)
+            run repeats function
+        else if maxIs6 == "1":
+            subnet designer function for 1(x)
+            run repeats function
+        else:
+            print "invalid input"
+            break
+
+defining repeats function:
+
+    answer = ask for user input("Run Again? y/n - ").turn the output all lowercase
+    
+    if answer == "":
+        print "you did not type anything"
+        run repeats function
+    else if answer == "y":
+        run main function
+        break
+
+    else:
+        close script
+
+run main function
+
+
+Defining repeater function
